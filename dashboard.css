@@ -1,0 +1,180 @@
+/* dashboard.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Default text color */
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; /* White container background */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff; /* Blue title */
+    font-size: 40px;
+}
+
+.graph-section {
+    margin-bottom: 20px;
+}
+
+.graph {
+    width: 100%;
+    height: 400px; /* Adjust the height as needed */
+}
+
+/* Increase the font size for better visibility */
+.graph .apexcharts-xaxis-label,
+.graph .apexcharts-yaxis-label {
+    font-size: 16px;
+}
+
+
+.summary-section {
+    margin-bottom: 20px;
+}
+
+.transaction-list {
+    list-style: none;
+    padding: 0;
+}
+
+.transaction-list li {
+    margin-bottom: 12px;
+    padding: 14px;
+    background-color: #f5f5f5; /* Light gray transaction background */
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.transaction-history-heading {
+    margin-top: 20px;
+    margin-bottom: 14px;
+    color: #007bff; /* Blue heading */
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #007bff; /* Blue button background */
+    color: #fff; /* White button text */
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.navbar {
+    background-color: #007bff;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #0056b3;
+}
+
+.navbar a.active {
+    background-color: #004085;
+}
+
+.dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 12px 24px;
+    background-color: #007bff; /* Blue color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #333; /* Dark background color for the page */
+    color: #fff; /* Light text color for the page */
+}
+
+.dark-mode-toggle:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.dark-mode .container {
+    background-color: #444; /* Dark container background */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* Adjusted shadow color */
+}
+
+.dark-mode .title {
+    color: #1e90ff; /* Light blue title */
+}
+
+.dark-mode .form-control {
+    border: 1px solid #888; /* Light gray border */
+    background-color: #555; /* Dark input background */
+    color: #fff; /* White text */
+}
+
+.dark-mode .btn {
+    background-color: #1e90ff; /* Light blue button background */
+}
+
+.dark-mode .btn:hover {
+    background-color: #007acc; /* Darker blue on hover */
+}
+
+.dark-mode .transaction-list li {
+    background-color: #555; /* Dark transaction background */
+}
+
+.dark-mode .transaction-history-heading {
+    color: #1e90ff; /* Light blue heading */
+}
+
+.dark-mode .graph text {
+    fill: #fff; /* Set the text color to white */
+}
+
+.dark-mode .apexcharts-legend-text {
+    fill: #fff;  /* Set the text color to white */
+}
+
